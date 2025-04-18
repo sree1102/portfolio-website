@@ -1,0 +1,46 @@
+// Toggle menu for mobile
+function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    nav.classList.toggle('active');
+}
+
+// Typing Effect
+const roles = ["DATA ANALYST", "WEB DEVELOPER", "FRONT END DEVELOPER"];
+let index = 0;
+let charIndex = 0;
+let typingElement = document.getElementById("typing");
+let deleting = false;
+
+function typeEffect() {
+    let currentRole = roles[index];
+
+    if (!deleting) {
+        typingElement.textContent = currentRole.substring(0, charIndex++);
+        if (charIndex > currentRole.length) {
+            deleting = true;
+            setTimeout(typeEffect, 1000);
+            return;
+        }
+    } else {
+        typingElement.textContent = currentRole.substring(0, charIndex--);
+        if (charIndex < 0) {
+            deleting = false;
+            index = (index + 1) % roles.length;
+        }
+    }
+
+    setTimeout(typeEffect, deleting ? 60 : 100);
+}
+
+typeEffect();
+
+function showProject(project) {
+    const tabs = document.querySelectorAll('.tab-button');
+    const contents = document.querySelectorAll('.project-content');
+
+    tabs.forEach(tab => tab.classList.remove('active'));
+    contents.forEach(content => content.classList.remove('active'));
+
+    document.querySelector(`.tab-button[onclick="showProject('${project}')"]`).classList.add('active');
+    document.getElementById(`project-${project}`).classList.add('active');
+}

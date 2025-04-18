@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sri Venkateswari Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Sri <span>Venkateswari</span></div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#projects">Projects</a></li>
+
+
+        </ul>
+    </nav>
+
+    <!-- Header Content -->
+    <section class="header">
+        <div class="text-content">
+            <h1>I'm Sri Venkateswari Thammidisetty</h1>
+            <h2><span class="highlight">A</span> <span class="typing-text" id="typing"></span></h2>
+            <p>I'm a passionate developer with a knack for crafting modern and responsive websites. I love transforming ideas into real digital experiences.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/srivenkateswari/" class="linkedin" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/sree1102" class="github" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="image-content">
+            <img src="https://i.pinimg.com/736x/6b/6c/ce/6b6cce22e12fbd4a6e79d168558b2f0a.jpg" alt="Profile Image" class="profile-img">
+        </div>
+
+    </section>
+    <!-- Education Section -->
+    <section class="education-section" id="education">
+        <h2 class="section-title">Education</h2>
+
+        <div class="timeline">
+
+            <!-- B.Tech -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Pragati Engineering College</h3>
+                    <span class="timeline-date">Aug 2019 – May 2023</span>
+                    <p><strong>Degree:</strong> B.Tech in Computer Science and Engineering</p>
+                    <p><strong>CGPA:</strong> 7.96</p>
+                    <p><strong>Location:</strong> Andhra Pradesh, India</p>
+                </div>
+            </div>
+
+            <!-- Intermediate -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Narayana Junior College</h3>
+                    <span class="timeline-date">June 2017 – March 2019</span>
+                    <p><strong>Stream:</strong> MPC (Maths, Physics, Chemistry)</p>
+                    <p><strong>Percentage:</strong> 9.86</p>
+                    <p><strong>Marks:</strong> 964</p>
+                    <p><strong>Location:</strong> Andhra Pradesh, India</p>
+                </div>
+            </div>
+
+            <!-- 10th Class -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>MPC Girls High School</h3>
+                    <span class="timeline-date">June 2016 – March 2017</span>
+                    <p><strong>Board:</strong> SSC</p>
+                    <p><strong>CGPA:</strong> 9.5</p>
+                    <p><strong>Location:</strong> Andhra Pradesh, India</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-wrapper">
+            <div class="skill-pill">HTML</div>
+            <div class="skill-pill">CSS</div>
+            <div class="skill-pill">Bootstrap</div>
+            <div class="skill-pill">JavaScript</div>
+            <div class="skill-pill">Python</div>
+            <div class="skill-pill">SQL</div>
+            <div class="skill-pill">DBMS</div>
+            <div class="skill-pill">Google Ads</div>
+            <div class="skill-pill">Meta Ads</div>
+            <div class="skill-pill">MS Office</div>
+            <div class="skill-pill">Canva</div>
+            <div class="skill-pill">Power Bi</div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificates-section" id="certificates">
+        <h2 class="section-title">Certificates</h2>
+        <div class="certificates-grid">
+            <div class="certificate-card">
+                <h3>SQL Intermediate</h3>
+                <p>Platform: HackerRank</p>
+            </div>
+            <div class="certificate-card">
+                <h3>Python (Basic)</h3>
+                <p>Platform: HackerRank</p>
+            </div>
+            <div class="certificate-card">
+                <h3>Introduction to bases(SQL)</h3>
+                <p>Platform: NextWave</p>
+            </div>
+            <div class="certificate-card">
+                <h3>Build Your Own Responsive Website</h3>
+                <p>Platform: NextWave</p>
+            </div>
+            <div class="certificate-card">
+                <h3>Build Your Own Static Website</h3>
+                <p>Platform: NextWave</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+
+    <section class="projects-section" id="projects">
+        <h2 class="projects-heading">Projects</h2>
+
+        <div class="projects-container">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <div class="project-title">Smart Gym Equipment Recommender</div>
+                <div class="project-description">
+                    An AI-based gym equipment recommender using Python (Streamlit), Excel, and Power BI.
+                    Recommends gym equipment based on age, gender, goal, budget, and health.
+                </div>
+                <a class="github-link" href="https://github.com/yourusername/gym-equipment-recommender" target="_blank">
+                    View on GitHub
+                </a>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <div class="project-title">Smart Meal Recommender</div>
+                <div class="project-description">
+                    A personalized meal recommendation app using Python, Streamlit, and Power BI.
+                    Provides BMI-based calorie targets and meal plans for fat loss, gain, or maintenance.
+                </div>
+                <a class="github-link" href="https://github.com/yourusername/smart-meal-planner" target="_blank">
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
