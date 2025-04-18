@@ -52,15 +52,3 @@ portfolio/
 - **Projects**: Card layout with GitHub links
 
 ---
----
-
-## 📌 How to Run Locally
-
-1. Clone the repo:
-```bash
-git clone https://github.com/sree1102/sreev-portfolio.git
-```
-
-2. Open `index.html` in any browser or Live Server in VS Code.
-
----
